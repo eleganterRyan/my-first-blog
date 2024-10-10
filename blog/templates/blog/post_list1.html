@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验室安全管理系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-black text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">实验室安全管理系统</h1>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="搜索..." class="bg-white text-black px-4 py-2 rounded-md w-64">
+                    <i class="fas fa-search absolute right-3 top-3 text-gray-500"></i>
+                </div>
+                <button class="p-2 hover:bg-gray-700 rounded-full" aria-label="通知">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="p-2 hover:bg-gray-700 rounded-full" aria-label="用户">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex flex-1">
+        <nav class="w-64 bg-gray-100 p-4">
+            <ul class="space-y-2">
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">仪表盘</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">安全检查</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">事故报告</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">培训记录</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">设备管理</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">化学品库存</button></li>
+                <li><button class="w-full text-left px-4 py-2 hover:bg-gray-200 rounded">应急预案</button></li>
+            </ul>
+        </nav>
+
+        <main class="flex-1 p-8">
+            <h2 class="text-2xl font-semibold mb-4">欢迎使用实验室安全管理系统</h2>
+            <p class="mb-6 text-gray-600">请从左侧菜单选择所需功能，或使用上方搜索栏查找特定信息。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold mb-2">待处理安全检查</h3>
+                    <p class="text-2xl font-bold">5 项</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold mb-2">近期事故报告</h3>
+                    <p class="text-2xl font-bold">0 起</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold mb-2">即将过期的培训证书</h3>
+                    <p class="text-2xl font-bold">3 份</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
